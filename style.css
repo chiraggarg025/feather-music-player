@@ -1,0 +1,44 @@
+
+body{
+    font-family: monospace;
+}
+/* NavBar */
+nav{
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    border : 2px solid black;
+}
+nav div, nav h3,nav input{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-item{
+    margin-left:2%;
+    
+}
+#search-bar{
+    margin-left: 40%;
+}
+
+#brand img{
+    width: 6vw;
+    height: 6vh;
+}
+#brand h1{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 800;
+    
+} 
+#brand h1 span {
+    display: block;
+    font-size: 1rem;
+}
+#user-image{
+    width: 6vw;
+    height: 6vh;
+    border-radius: 50%;
+}
