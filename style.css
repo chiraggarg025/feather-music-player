@@ -1,15 +1,26 @@
-
+html, body { height: 100%; width: 100%; margin: 0; }
 body{
+
     font-family: monospace;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(background_3.jpg);
+    margin: 0%;
+    color: white;
 }
-/* NavBar */
+/* ============NavBar=========== */
 nav{
-    
-    margin-left: 5%;
-    margin-right: 5%;
+    color: white;
+    background-color:rgba(0,0,0,0.8);
+    /* padding-left: 4%;
+    padding-right: 4%; */
+    width: 100%;
+    margin-top: 0%;
     align-items: center;
     /* flex-wrap: wrap; */
-    border : 2px solid black;
+    /* border : 2px solid black; */
 }
 nav div, nav h3,nav input{
     display: inline-block;
@@ -20,12 +31,24 @@ nav div, nav h3,nav input{
     
 }
 #search-bar{
-    margin-left: 40%;
+    margin-left: 45%;
 }
-
+#search-bar input{
+    font-size: 0.7rem;
+    background-color: inherit;
+    border: none;
+    border: 1px solid white;
+    
+}
+#search-bar ::placeholder{
+    color: white;
+}
+#brand{
+    margin-left: 6% ;
+}
 #brand img{
-    width: 6vw;
-    height: 6vh;
+    width: 4vw;
+    height: 7vh;
 }
 #brand h1{
     display: inline-block;
@@ -37,8 +60,295 @@ nav div, nav h3,nav input{
     display: block;
     font-size: 1rem;
 }
+/* User Image */
 #user-image{
-    width: 6vw;
-    height: 6vh;
+    width: 3.7vw;
+    height: 7vh;
     border-radius: 50%;
 }
+/* Content */
+#content{
+    background-color:rgba(0,0,0,0.8);
+    /* padding-left: 5%;
+    padding-right:5%; */
+    padding-top: 1%;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    
+
+}
+
+/*============== Main Section========== */
+#main{
+    margin-left: 10%;
+    margin-right: 2%;
+    margin-bottom: 7vh;
+    width: 60%;
+    /* height: 70vh; */
+    height: auto;
+    /* border: 1px solid white; */
+    /* background-color:rgba(0,0,0,0.8); */
+}
+/* Carousel */
+#carousel{
+    height: 23vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* overflow: scroll; */
+}
+.carousel-img{
+    display: inline-block;
+    width: 60%;
+    max-height: inherit;
+    margin:1%;
+}
+.carousel-img img{
+    width:100%;
+    max-height: 22vh;
+}
+/* latest release */
+#latest-release-albums{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    /* align-items: center;
+     */
+     margin-top: 2%;
+     display: flex;
+     align-items: center;
+    width:40%;
+    height: 10vh;
+}
+.card div,.card h2,.card h3,.card h5 {
+    display: inline-block;
+    margin:0px;
+}
+.card img{
+    width:20%;
+    height:100%;
+}
+.card .author{
+    margin: 2%;
+
+}
+.card .author h4{
+    color: lightgrey;
+}
+.card .play-time{
+    margin-left: 30%;
+}
+/* popular artist Section */
+#popular-artists{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#popular-artists div{
+    display: inline-block;
+    text-align: center;
+}
+.artist{
+    margin: 1%;
+    width: 13%;
+    text-align: center;
+}
+.artist h3{
+    margin-top: 0px;
+}
+.artist img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+/* Mood Section */
+#mood-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2%;
+}
+#mood-icon{
+    width: 90px;
+    height:90px;
+    background-color: inherit;
+    margin-left: 4%;
+    /* background-color: black; */
+}
+.mood{
+    display: inline-block;
+    background-image: url(background_2.jpg);
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 2%;
+    width: 70px;
+    height: 70px;
+}
+.mood p{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+}
+/* Event Section */
+#event-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.event{
+    background-image: url(background_2.jpg);
+    max-height: 16vh;
+    width: 30%;
+    margin-top: 1%;
+}
+/* Latest English Section */
+#latest-english{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.song{
+    margin: 1%;
+    width: 13%;
+    text-align: center;
+}
+.song h4,h3{
+    margin: 0;
+}
+.song h4{
+    /* margin-top: 0px; */
+    font-weight: 500;
+    color: lightgrey;
+}
+
+.song img{
+    width: 100px;
+    border-radius: 2px;
+    height:100px;
+}
+
+
+
+/*============= Aside Section========== */
+
+#aside{
+    width: 23%;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* border: 1px solid white; */
+    /* background-color:rgba(0,0,0,0.8); */
+}
+/* Aside Heading */
+#aside-heading{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+#aside-heading h1,h4 {
+    margin-top: 0px;
+    display: inline-block;
+}
+#aside-heading h4{
+    color: cyan;
+}
+#aside-heading h4 i{
+    font-size: 0.6rem;
+}
+/* Queue Items */
+.queue-card{
+
+    margin-left: 5%;
+    margin-top: 3%;
+    vertical-align: middle;
+}
+.queue-card h4{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4%;
+}
+.queue-number{
+    color: lightgrey;
+    font-weight: 600;
+}
+.queue-card img{
+    box-shadow: 0px 0px 7px 1px white;
+    border-radius: 2px;
+    width: 15%;
+    height:15%;
+}
+.queue-card div{
+    display: inline-block;
+}
+.queue-card i{
+    float: right;
+    margin-right: 2%;
+    margin-top:2%;
+}
+
+
+/* PLAYER */
+#player-container{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0,0,0,0.95);
+    box-shadow: 0px 0px 2px 0px white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#song-info img{
+    box-shadow: 0px 0px 5px 0px white;
+    border-radius: 2px;
+    margin: 1%;
+    width: 15%;
+    height:90%;
+}
+#song-info h3{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -12%;
+}
+#song-info h3 span {
+    font-size: 0.7rem;
+}
+#player{
+    width: 80%;
+    margin-top: 1.5%;
+    margin-right: 5%;
+
+}
+#player i{
+    margin-left: 10% ;
+}
+#player-playtime{
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+/* Designing Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.8);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
