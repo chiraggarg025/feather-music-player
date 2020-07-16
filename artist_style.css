@@ -90,54 +90,87 @@ nav div, nav h3,nav input{
     margin-bottom: 7vh;
     width: 60%;
     margin-top: 7%;
-    /* height: 70vh; */
     height: auto;
-    /* border: 1px solid white; */
-    /* background-color:rgba(0,0,0,0.8); */
 }
-/* Carousel */
-#carousel{
-    height: 45vh;
-    width: 100%;
+/* Jumbotron containing image and details about artist */
+#jumbotron{
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color:rgba(0,0,0,0.7);
+    padding: 2%;
 }
-.carousel-img{
+#jumbotron div{
     display: inline-block;
-    width: 50%;
-    max-height: 40vh;
-    margin-top: 2%;
-    cursor: pointer;
-    box-shadow: 0px 0px 7px black;
-    /* transition: 1s ease-in-out; */
 }
-.carousel-img img{
-    width:100%;
-    height: 100%;
-    max-height: -webkit-fill-available;
+#image-container{
+    width: 34%;
+    height: 70%;
 }
-#carousel2{
-    margin-left:-10% ;
-    margin-right: -10%;
-    z-index: 1;
-    margin-top: 0px;
-    width: 70%;
-    max-height: inherit;
-    box-shadow: 0px 0px 7px black;
-    
+#image-container img{
+    width: 100%;
+   height: 100%;
 }
-/* Carousel animation */
-.carousel-img :hover{
-    position: relative;
-    z-index: 2;
-    transform: scale(1.15);
-    transition: transform 0.6s ease-in-out ;
-    box-shadow: 0px 0px 7px black;
+/* Details about Artist */
+#about-artist{
+    margin-left: 2%;
+    width: 60%;
+    vertical-align: top;
+    color: lightgray;
+    /* margin-top: 10%; */
+}
+#about-artist h1{
+    font-size: 2rem;
+    color: white;
+    margin: 0px;
+}
+#about-artist #followers{
+    float: right;
 }
 
-/* latest release */
+#records-container #follow{
+    margin-left: 10%;
+    display: inline-block;
+}
+#records-container #play-button{
+    border: none;
+    color: white;
+    background-image: linear-gradient(90deg,rgb(55, 200, 236),rgb(233, 123, 200));
+    font-size: 1rem;
+    font-family: monospace;
+    cursor: pointer;
+    padding: 2% 5% 2% 5%;
+
+}
+
+/* Playlist */
+.list-item{
+    background-color: rgba(165, 155, 155, 0.637);
+    padding: 1%;
+}
+
+.list-item img {
+    width: 10% !important;
+    height: 10% !important;
+    margin : 0px !important;
+}
+.queue-card :hover{
+    background-color: gray !important;
+}
+.queue-card > div {
+    opacity: 0.5;
+  }
+
+/*============= Aside Section========== */
+
+#aside{
+    width: 23%;
+    margin-top: 7%;
+}
+/* Similar Artists */
 #latest-release-albums{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 .card{
@@ -147,7 +180,7 @@ nav div, nav h3,nav input{
      display: flex;
      align-items: center;
      cursor: pointer;
-    width:40%;
+    width:100%;
     height: 12vh;
 }
 .card div,.card h2,.card h3,.card h5 {
@@ -168,144 +201,19 @@ nav div, nav h3,nav input{
 .card .play-time{
     margin-left: 30%;
 }
-/* popular artist Section */
-#popular-artists{
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-evenly;
 
-}
-#popular-artists div{
-    display: inline-block;
-    text-align: center;
-}
-.artist{
-    
-    margin: 1%;
-    width: 20%;
-    height: 20%;
-    cursor: pointer;
-    text-align: center;
-}
-.artist h3{
-    margin-top: 0px;
-}
-.artist img{
-    width: 100%;
-    height:100%;
-    border-radius: 50%;
-    border: 1px solid white;
-}
-/* Mood Section */
-#mood-container{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(0,0,0,0.6);
-    padding: 2%;
-}
-#mood-icon{
-    width: 90px;
-    height:90px;
-    background-color: inherit;
-    margin-left: 4%;
-    /* background-color: black; */
-}
-.mood{
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 2%;
-    width: 14%;
-    height: 14%;
-    box-shadow: 0px 0px 7px white;
-    cursor: pointer;
-}
-.mood :hover{
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
-    box-shadow: 0px 0px 7px white;
-}
-.mood img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.mood p{
-    font-size: 1.1rem;
-    text-shadow: 2px 2px 3px black;
-    text-align: center;
-}
-/* Event Section */
-#event-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-.event{
-    max-height: 30vh;
-    width: 32%;
-    cursor: pointer;
-    margin-top: 1%;
-    display: inline-block;
-}
-.event img{
-    width: 100%;
-    height: 100%;;
-}
-.event :hover{
-    transform: scale(1.10);
-    transition: 0.5s ease-in-out;
+/* Aside Heading */
 
-}
-/* Latest English Section */
-#latest-english{
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.song{
-    margin: 1%;
-    width: 20%;
-    height: 20%;
-    cursor: pointer;
-    text-align: center;
-}
-.song :hover{
-    box-shadow: 0px 0px 15px white;
-    transition: 0.3s ease-in-out;
-}
-.song h4,h3{
-    margin: 0;
-}
-.song h4{
-    /* margin-top: 0px; */
-    font-weight: 500;
-    color: lightgrey;
-}
-
-.song img{
-    width: 100%;
-    border-radius: 2px;
-    height:100%;
-}
-
-
-
-/*============= Aside Section========== */
-
-#aside{
-    width: 23%;
-    margin-top: 7%;
-    height: 70vh;
+#recently-played {
+    height: 80vh;
     overflow-y: auto;
     overflow-x: hidden;
-    /* border: 1px solid white; */
-    /* background-color:rgba(0,0,0,0.8); */
 }
-/* Aside Heading */
 #aside-heading{
     position: sticky;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-top: 7%;
 }
 #aside-heading h1,h4 {
     margin-top: 0px;
@@ -318,6 +226,7 @@ nav div, nav h3,nav input{
     font-size: 0.6rem;
 }
 /* Queue Items */
+
 .queue-card{
     margin-left: 5%;
     margin-top: 3%;
@@ -396,18 +305,6 @@ nav div, nav h3,nav input{
 #player-playtime{
     margin-right: 10%;
     margin-top: 1%;
-}
-#artist-coldplay{
-    background-color: gray;
-    width: 0px;
-    height: 0px;;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-}
-#artist-coldplay:target{
-    width: 100%;
-    height: 100%;
-    z-index: 99;
 }
 
 /* Designing Scrollbar */
