@@ -42,6 +42,7 @@ nav div, nav h3,nav input{
 #brand h3 a{
     text-decoration: none;
     color: white;
+    background-color: gray;
     
 }
 #brand h3, #brand h1 {
@@ -301,6 +302,10 @@ nav div, nav h3,nav input{
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#player-container #slider-container{
+    width: 70%;
 }
 
 #song-info img{
@@ -318,11 +323,28 @@ nav div, nav h3,nav input{
 #song-info h3 span {
     font-size: 0.7rem;
 }
+#myrange{
+    min-width: 100%;
+}
 #player{
-    width: 80%;
+    display: flex;
+    justify-content: center;
     margin-top: 1.5%;
     margin-right: 5%;
 
+}
+/* Slider for player */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  .slider {
+    width: 100%; 
+    height: 25px; 
+    background: #d3d3d3;
+    outline: none;
+  }
+#myrange{
+    width: 100%;
 }
 #player i{
     margin-left: 10% ;
@@ -332,6 +354,7 @@ nav div, nav h3,nav input{
     color: cyan;
 }
 #player-playtime{
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 1%;
 }
@@ -357,8 +380,17 @@ nav div, nav h3,nav input{
     background: #555;
   }
   @media screen and (max-width: 600px) {
+    #search-bar{
+        display: none;
+    }
+    #brand{
+        width: 100%;
+    }
     #content{
         flex-wrap: wrap;
+    }
+    #jumbotron{
+        margin-top: 18%;
     }
     #main{
         width: 100%;

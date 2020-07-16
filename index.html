@@ -115,28 +115,28 @@
             <div id="popular-artists-container">
                 <h2>Popular Artists</h2>
                 <div id="popular-artists">
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular1.jpg">
                         <h3>Drake</h3>
                     </div>
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular2.jpg">
                         <h3>Eminem</h3>
                     </div>
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular3.jpg">
                         <h3>Post Malone</h3>
                     </div>
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular4.jpg">
                         <h3>Meduza</h3>
                     </div>
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular5.jpg">
                         <h3>Guru Randhava</h3>
                     </div>
 
-                    <div class="artist">
+                    <div class="artist" onclick="window.location.assign('artist.html')">
                         <img src="images/popular/popular6.jpg">
                         <h3>Diljit Dosanj</h3>
                     </div>
@@ -371,13 +371,19 @@
                 <h3>Raabta<span>(Bollywood)</span></h3>
                 <!-- <h4>AUG 11,2020</h4> -->
             </div>
-            <div id="player">
-                <i class="fa fa-random"></i>
-                <i class="fa fa-chevron-left"></i>
-                <i class="fa fa-play"></i>
-                <i class="fa fa-chevron-right"></i>
-                <i class="fa fa-repeat"></i>
+            <div id="slider-container">
+                <div id="player">
+                    <i class="fa fa-random"></i>
+                    <i class="fa fa-chevron-left"></i>
+                    <i class="fa fa-play"></i>
+                    <i class="fa fa-chevron-right"></i>
+                    <i class="fa fa-repeat"></i>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
+            
             <div id="player-playtime">
                 <h4>0:00/3:20 </h4>
             </div>
