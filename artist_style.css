@@ -48,6 +48,7 @@ nav div, nav h3,nav input{
 #brand h3, #brand h1 {
     margin-left: 3%;
     margin-top: 1%;
+    cursor: pointer;
     float: left;
 }
 #brand h1{
